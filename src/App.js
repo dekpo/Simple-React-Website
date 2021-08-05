@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">    
       <header className="App-header">
+        <p className="h1">BOOTSTRAP DEPUIS REACT !!!</p>
+        <button type="button" className="btn btn-primary">Hello</button>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,8 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
+          </div>
+          );
 }
 
-export default App;
+          export default App;
