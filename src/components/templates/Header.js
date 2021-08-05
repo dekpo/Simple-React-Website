@@ -8,22 +8,22 @@ const Header = () => {
             <NavLink className="navbar-brand" to="/">
             <img src={ require('../../assets/logo-m2i.png').default } width="50" alt="logo" />
             </NavLink>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+                  <NavLink activeClassName="active" exact className="nav-link" to="/"  aria-current="page">Home</NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/carousel">Carousel</NavLink>
+                  <NavLink activeClassName="active" className="nav-link" to="/carousel">Carousel</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Gallery</a>
+                  <NavLink activeClassName="active" className="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav" to="/gallery">Gallery</NavLink>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+                <NavLink activeClassName="active"className="nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav" to="/contact">Contact</NavLink>
                 </li>
               </ul>
             </div>
