@@ -6,11 +6,18 @@ import Footer from './components/templates/Footer';
 import Home from './components/pages/Home';
 import Carousel from './components/pages/Carousel';
 
+import { BrowserRouter,Switch, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Header />
-      <Home />
+      <Switch>
+        <Route path="/carousel" component={Carousel} />
+        <Route path="/" component={Home} />
+      </Switch>
+      </BrowserRouter>
       <Footer />
     </div>
   );
