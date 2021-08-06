@@ -1,3 +1,5 @@
+import logo from '../../logo.svg'
+
 const Home = () => (
     <section>
         <div className="container-fluid">
@@ -6,11 +8,11 @@ const Home = () => (
           </div>
           <div className="row">
             <div className="col-12 col-md-6">
-              <img src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/1/a/11a3b884f1_50170595_alpes-elevation.jpg" className="img-fluid" alt="Montagne" />
+              <a href="https://fr.reactjs.org/" rel="noreferrer" target="_blank"><img src={logo} className="img-fluid" alt="Montagne" /></a>
             </div>
             <div className="col">
               <h4>Welcome to my React App</h4>
-              <p>lorem ipsum dolor trucbidule lorem ipsum dolor trucbidule lorem ipsum dolor trucbidule lorem ipsum dolor trucbidule lorem ipsum dolor trucbidule </p>
+              <p><a href="https://fr.reactjs.org/" rel="noreferrer" target="_blank">React.js</a> or ReactJS or simply React is a free and open-source front-end JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications. However, React is only concerned with state management and rendering that state to the DOM, so creating React applications usually requires the use of additional libraries for routing, as well as certain client-side functionality.</p>
             </div>
           </div>
         </div>

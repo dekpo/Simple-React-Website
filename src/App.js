@@ -5,6 +5,7 @@ import Header from './components/templates/Header';
 import Footer from './components/templates/Footer';
 import Home from './components/pages/Home';
 import Carousel from './components/pages/Carousel';
+import Gallery from './components/pages/Gallery';
 
 import { BrowserRouter,Switch, Route } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
       <Header />
       <Switch>
+      <Route path="/gallery" component={Gallery} />
         <Route path="/carousel" component={Carousel} />
         <Route path="/" component={Home} />
       </Switch>
